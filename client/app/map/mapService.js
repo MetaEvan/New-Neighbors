@@ -7,7 +7,17 @@ mapMod // = angular.module('myApp.mapServices',[])
         lat: 0,
         lng: 0
       },
-    zoom: 4
+    zoom: 4,
+    streetViewControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_TOP
+    },
+    zoomControlOptions: {
+        position: google.maps.ControlPosition.RIGHT_TOP
+    },
+    mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+        position: google.maps.ControlPosition.TOP_RIGHT
+    },
   };
 
   // var marker;
