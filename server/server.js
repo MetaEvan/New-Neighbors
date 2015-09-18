@@ -21,6 +21,8 @@ var zillow = require('./helpers/zillow.js');
 app = express();
 middleware(app,express);
 
+app.set('port', process.env.PORT || 8080);
+
 //Global Variables
 var userDestination;
 var neighborhoods;
