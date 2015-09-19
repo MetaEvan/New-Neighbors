@@ -225,7 +225,7 @@ app.controller('MainController', ['Map', 'ServerApi', '$state', 'Details', 'Char
       main.neighborhoods = Object.keys(data).map(function(key) { return data[key]; });  //converts object of objects to array of objects
 
       //remove
-      // console.log('requestNeighborhoods says: main.neighborhoods:',main.neighborhoods);
+      console.log('requestNeighborhoods says: main.neighborhoods:',main.neighborhoods);
 
       main.attractionObj = Details.createPlacesObj(main.neighborhoods, Details.attractionDict);
       main.serviceObj = Details.createPlacesObj(main.neighborhoods, Details.serviceDict);
@@ -277,7 +277,7 @@ app.controller('MainController', ['Map', 'ServerApi', '$state', 'Details', 'Char
 
 
     marker.addListener('click', function() {
-      console.log('neighborhood clicked:', neighborhoodObj);
+      // console.log('neighborhood clicked:', neighborhoodObj);
       if(neighborhoodObj.name === main.currentNeighborhood.name) { return; }
 
       main.selectNeighborhood(neighborhoodObj)
@@ -308,7 +308,7 @@ app.controller('MainController', ['Map', 'ServerApi', '$state', 'Details', 'Char
   //----------------------------------------------------------------------------------
   //Function to initialize and draw the map, centering on the the center of the U.S.
   main.initMap = function() {
-    console.log("main.initMap")
+    // console.log("main.initMap")
     var centerUS = {
       latitude: 38.5,
       longitude: -96
