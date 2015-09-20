@@ -350,24 +350,24 @@ angular.module('myApp.charts', [])
           },
           series: [{
             data: [
-              // ['0-10 years old',    pieChartObj['0-10 years']],
-              // ['10-20 years old',    pieChartObj['10-20 years']],
-              // ['20-30 years old',    pieChartObj['20-30 years']],
-              // ['30-40 years old',    pieChartObj['30-40 years']],
-              // ['40-50 years old',    pieChartObj['40-50 years']],
-              // ['50-60 years old',    pieChartObj['50-60 years']],
-              // ['60-70 years old',    pieChartObj['60-70 years']],
-              // ['70+ years old',    pieChartObj['70+ years']]
+              ['0-10 years old',    pieChartObj['0-10 years']],
+              ['10-20 years old',    pieChartObj['10-20 years']],
+              ['20-30 years old',    pieChartObj['20-30 years']],
+              ['30-40 years old',    pieChartObj['30-40 years']],
+              ['40-50 years old',    pieChartObj['40-50 years']],
+              ['50-60 years old',    pieChartObj['50-60 years']],
+              ['60-70 years old',    pieChartObj['60-70 years']],
+              ['70+ years old',    pieChartObj['70+ years']]
 
               // test data
-              ['0-10 years old', 5],
-              ['10-20 years old', 10],
-              ['20-30 years old', 15],
-              ['30-40 years old', 32],
-              ['40-50 years old', 32],
-              ['50-60 years old', 32],
-              ['60-70 years old', 32],
-              ['70+ years old', 32]
+              // ['0-10 years old', 5],
+              // ['10-20 years old', 10],
+              // ['20-30 years old', 15],
+              // ['30-40 years old', 32],
+              // ['40-50 years old', 32],
+              // ['50-60 years old', 32],
+              // ['60-70 years old', 32],
+              // ['70+ years old', 32]
             ]
           }]
       });

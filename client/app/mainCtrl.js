@@ -8,8 +8,8 @@ app.controller('MainController', ['Map', 'ServerApi', '$state', 'Details', 'Char
   main.searchInfo = {}; // JSON obj to send to server
   main.searchInfo.address = '';
   main.searchInfo.buyOrRent = 'rent';
-  main.searchInfo.bedrooms = 1;
-  main.searchInfo.bathrooms = 1;
+  main.searchInfo.bedrooms = "1";
+  main.searchInfo.bathrooms = "1";
   main.searchInfo.maxRent = 8000;
   main.searchInfo.commuteTime = 45;
   main.searchInfo.commuteDistance = 30;
@@ -269,22 +269,18 @@ app.controller('MainController', ['Map', 'ServerApi', '$state', 'Details', 'Char
       url: "assets/images/housepurplewhite.png",
       size: new google.maps.Size(5.3*8, 13*8),
       origin: new google.maps.Point(0, 0),
-      anchor: new google.maps.Point(20, 30),
+      anchor: new google.maps.Point(10.6, 30),
       scaledSize: new google.maps.Size(5.3*4, 13*4)
     };
 
     var marker = Map.dropMarker(coordinates, title, title, icon, 'neighborhood')[0];
-
 
     marker.addListener('click', function() {
       // console.log('neighborhood clicked:', neighborhoodObj);
       if(neighborhoodObj.name === main.currentNeighborhood.name) { return; }
 
       main.selectNeighborhood(neighborhoodObj)
-      // console.log('neighborhoodObj:',neighborhoodObj);
-      // console.log('main.currneigh:',main.currentNeighborhood);
     });
-
     return marker;
   };
 
