@@ -58,6 +58,7 @@ app.post('/api/getNeighborhoods', function (req, res) {
     if(eventNumber === 2 || force) {
       setTimeout(function() {
         console.log("Server tasks completed.");
+        console.log(neighborhoodObj);
         res.status(200).send(neighborhoodObj);
       }, 500)
     }
@@ -218,7 +219,7 @@ app.post('/api/getNeighborhoods', function (req, res) {
 
 
 app.post('/api/getDemography', function (req, res) {
-  console.log('server.js says: GET request received! Data:', req.body);
+  console.log('server.js says: getDemography GET request received! Data:', req.body);
 
   let zipArr = req.body;
 

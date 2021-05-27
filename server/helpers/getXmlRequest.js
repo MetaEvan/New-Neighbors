@@ -4,7 +4,7 @@ var parseString = require('xml2js').parseString;
 module.exports = function (url) {
   var deferred = Q.defer()
   //remove
-  // console.log('getRequest called. url:',url);
+  console.log('getRequest called. url:',url);
   request(url, function (error, response, body) {
     //remove
     // console.log('Response status:', response.statusCode);

@@ -211,8 +211,8 @@ app.controller('MainController', ['Map', 'ServerApi', '$state', 'Details', 'Char
       // console.log('requestNeighborhoods says: main.neighborhoods:',main.neighborhoods);
       
       // turned off until fully implemented
-      let zipArr = Details.createZipArray(main.neighborhoods)
-      main.getDemography(zipArr);
+      // let zipArr = Details.createZipArray(main.neighborhoods)
+      // main.getDemography(zipArr);
 
       main.attractionObj = Details.createPlacesObj(main.neighborhoods, Details.attractionDict);
       main.serviceObj = Details.createPlacesObj(main.neighborhoods, Details.serviceDict);
@@ -273,7 +273,7 @@ app.controller('MainController', ['Map', 'ServerApi', '$state', 'Details', 'Char
       if(neighborhoodObj.name === main.currentNeighborhood.name) { return; }
 
       main.selectNeighborhood(neighborhoodObj)
-      // console.log('neighborhoodObj:',neighborhoodObj);
+      console.log('marker neighborhoodObj:',neighborhoodObj);
       // console.log('main.currneigh:',main.currentNeighborhood);
     });
 

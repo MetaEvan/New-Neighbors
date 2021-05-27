@@ -31,7 +31,7 @@ module.exports = function (zipCode) {
   .then(function (responseObj) {
     let demogObj = responseObj.d[0];
     //remove
-    // console.log('getDemographics says: Response data fetched: ',demogObj);
+    console.log('getDemographics says: Response data fetched: ',demogObj);
     
     deferred.resolve(demogObj)
 
